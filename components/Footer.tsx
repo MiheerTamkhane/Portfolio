@@ -11,7 +11,7 @@ const Footer = () => {
       >
         👋
       </span>
-      Footer
+      Footer Component
     </footer>
   );
 };
