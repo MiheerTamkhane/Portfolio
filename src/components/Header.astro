@@ -8,10 +8,10 @@ const { pathname } = Astro.url;
 
 <header>
   <Container>
-    <div class="flex flex-wrap gap-y-2 justify-between items-center">
+    <div class="flex flex-wrap gap-y-2 flex-col md:flex-row justify-between md:items-center">
       <Link href="/" underline={false} isActive={pathname == "/"}>
         <div class="text-xl font-semibold">
-          {SITE.NAME}
+          M.dev
         </div>
       </Link>
       <nav class="flex gap-1 items-center">
@@ -33,7 +33,7 @@ const { pathname } = Astro.url;
 
           <button
           id='toggleDarkMode'
-          class='relative rounded-md p-1 ml-2 transition-all'
+          class='relative p-1 pr-2 ml-2 pl-2 transition-all border-l dark:border-l-gray-500'
         >
           <span class='sr-only'>Dark Theme</span>
           <svg
