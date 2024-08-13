@@ -4,12 +4,16 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import vercel from '@astrojs/vercel/serverless';
 
+// https://astro.build/config
 export default defineConfig({
   output: "server",
   integrations: [mdx(), sitemap(), tailwind()],
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   devToolbar: {
     enabled: false
   }
 });
-
