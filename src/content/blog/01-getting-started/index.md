@@ -1,73 +1,20 @@
 ---
-title: "Getting started"
+title: "Talking With Machines"
 description: "Hit the ground running."
-date: "Mar 22 2024"
+date: "Aug 15 2021"
 ---
+![Astro Nano](/talking-with-machines.png)
 
 The basic configuration of Nano is pretty simple.
+Hello there, I am Miheer you must be aware about people who talk to animals , birds but , have you ever heard about people who Talks to Machines , it's ok don't be so startled . Yes you read absolutely correct "Machines" . What Machine means to you ? I know everyone have already watched 3 Idiots , so now you are going to say "zip of pant is machine up-down up-down" yes definitely it is machine like " Everywhere I go , I see Machines" . So our point is who are talk to the machines ? is he/she who operates machines in factory or one who Assemble that machines ? or who which shows first trial of that machine when you buy it or saw it. but Truth is no one from all of them . Then who?
 
-Edit `src/consts.ts`
+The one who really Talks to machines is Programmers. I know lots of things are messing up your mind. What programmers do with machines, maybe they just write some words with including symbols in with different colors in dark lights and wearing hoodie with Mask up. LOL this is the image of Programmer in every ones mind. So How he can really talk with Machines. Let's talk about daily life, When you use laptops, computers and now smartphones are Everywhere so anything you do on this gadgets is because of greate programmers. Like you set up an alarm on the phone to wake up early in the morning, You plays games on your phone, plays music on phone, checking up whats app messages, Facebook Stories, Instagram DM's etc. all that is because programmers. How can you set a alarm in some clicks or How can you play games on that small screen. Because there are thousands of lines of codes behind your single action. What are this lines means to ? How its possible That words ,numbers ,symbols results in such a beautiful interface? Questions Again.
+So these lines are called programes written in some programming languages. Ok then what is programming language? In the halfway of 90's first computer language was invented which was named as "Fortran" after that number of languages were formulated maybe much batter than 1st one. So in short in these computer language these Alphabates, Numbers and symbols have given their respective function. Like addition symbol have Addition function Somethimg like that. Point is that programmer is aware of these languages. Not from birth! obviously he learnt that languages. Thsese languages are made for communicating with smartest machine Known as Computer. Yes we programmers do talk to computers with the help of these languages. You will be surprised that these talks are similar to Human talks like us, maybe much honest and loyal.
+Computer Don't even recognize these alphabats and numbers. You know? Funny thing is computers only knows 2 binary characters 0s and 1s. So Compilers or Interpreters Converts this code into machine language or in Binary form. This is how we talk to machines in their language and they gives us output or message in our language. Thats how its done now you may have questions like how the numbers and alphabates get converted into that binary language? what are compilers?
 
-Customize the base site
+So, all the code(programe) written by coder is in human readable format basically in english language with some weird syntax(for zero knowledge of programming). how it get converted to binary which computer understands is by compilers. which are aslo made by programmers. Now why I'm telling you that, because having a skill to talk with computers in this era is important. The skill has power to change your life and also your career. and also it teaches us how to think and yes I am not saying this.
 
-```ts 
-// src/consts.ts
+“Everybody should learn to program a computer, because it teaches you how to think.” - Steve Jobs
 
-export const SITE: Site = {
-  NAME: "Astro Nano",
-  EMAIL: "markhorn.dev@gmail.com",
-  NUM_POSTS_ON_HOMEPAGE: 3,
-  NUM_WORKS_ON_HOMEPAGE: 2,
-  NUM_PROJECTS_ON_HOMEPAGE: 3,
-};
-```
-
-| Field | Req | Description |
-| :---- | :-- | :-----------|
-| NAME | Yes | Displayed in header and footer. Used in SEO and RSS. |
-| EMAIL | Yes | Displayed in contact section. |
-| NUM_POSTS | Yes | Limit num of posts on home page. |
-| NUM_WORKS | Yes | Limit num of works on home page. |
-| NUM_PROJECTS | Yes | Limit num of projects on home page. |
-
-Customize your page metadata
-
-```ts 
-// src/consts.ts
-
-export const HOME: Metadata = {
-  TITLE: "Home",
-  DESCRIPTION: "Astro Nano is a minimal and lightweight blog and portfolio.",
-};
-```
-
-| Field | Req | Description |
-| :---- | :-- | :-----------|
-| TITLE | Yes | Displayed in browser tab. Used in SEO and RSS. |
-| DESCRIPTION | Yes | Used in SEO and RSS. |
-
-Customize your social media
-
-```ts 
-// src/consts.ts
-
-export const SOCIALS: Socials = [
-  { 
-    NAME: "twitter-x",
-    HREF: "https://twitter.com/markhorn_dev",
-  },
-  { 
-    NAME: "github",
-    HREF: "https://github.com/markhorn-dev"
-  },
-  { 
-    NAME: "linkedin",
-    HREF: "https://www.linkedin.com/in/markhorn-dev",
-  }
-];
-```
-
-| Field | Req | Description |
-| :---- | :-- | :-----------|
-| NAME | Yes | Displayed in contact section as a link. |
-| HREF | Yes | External url to social media profile. |
+That's it guys.
+Thank you 🙂
