@@ -2,15 +2,15 @@ import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
   NAME: "Miheer Tamkhane",
-  EMAIL: "markhorn.dev@gmail.com",
+  EMAIL: "miheertamkhane@gmail.com",
   NUM_POSTS_ON_HOMEPAGE: 3,
-  NUM_WORKS_ON_HOMEPAGE: 2,
+  NUM_WORKS_ON_HOMEPAGE: 3,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
 
 export const HOME: Metadata = {
-  TITLE: "Home",
-  DESCRIPTION: "Astro Nano is a minimal and lightweight blog and portfolio.",
+  TITLE: "Miheer Tamkhane",
+  DESCRIPTION: "Miheer Frontend developer blog and portfolio website.",
 };
 
 export const BLOG: Metadata = {

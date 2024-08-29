@@ -16,7 +16,7 @@ interface Props {
   image?: string;
 }
 
-// const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = "/nano.png" } = Astro.props;
 ---
@@ -24,7 +24,9 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/x-icon" href="/image_cleanup.png" sizes="160x160">
+<link rel="icon" type="image/svg+xml" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="/favicon-light.svg" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/x-icon" href="/favicon-light.svg">
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
@@ -34,7 +36,7 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <link rel="preload" href={lora600} as="font" type="font/woff2" crossorigin/>
 
 <!-- Canonical URL -->
-<!-- <link rel="canonical" href={canonicalURL} /> -->
+<link rel="canonical" href={canonicalURL} />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -92,6 +94,7 @@ const { title, description, image = "/nano.png" } = Astro.props;
         localStorage.setItem("theme", "dark");
         toggleTheme(true);
       }
+      console.log({theme, flag});
     });
 
     const systemThemeButton = document.getElementById("system-theme-button");
@@ -176,6 +179,9 @@ function toggleTheme(dark) {
   }
 
   function msToTime(ms) {
+  if(ms < 1000){
+    return ms.toFixed(1) + " Ms";
+  }
   let seconds = (ms / 1000).toFixed(1);
   let minutes = (ms / (1000 * 60)).toFixed(1);
   let hours = (ms / (1000 * 60 * 60)).toFixed(1);
@@ -188,6 +194,7 @@ function toggleTheme(dark) {
 window.addEventListener("load", () => {
   var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart; 
   const loadPara = document.getElementById("loadTime");
+    console.log("Page load time is ", msToTime(loadTime), loadPara);
     loadPara.innerText = `Page loaded in ${msToTime(loadTime)}`;
   });
 
