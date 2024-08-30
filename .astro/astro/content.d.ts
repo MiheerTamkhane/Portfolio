@@ -156,72 +156,93 @@ declare module 'astro:content' {
   slug: "04-work-collection";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "05-markdown-syntax/index.md": {
 	id: "05-markdown-syntax/index.md";
   slug: "05-markdown-syntax";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "06-mdx-syntax/index.mdx": {
 	id: "06-mdx-syntax/index.mdx";
   slug: "06-mdx-syntax";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "accordion-in-react/index.md": {
 	id: "accordion-in-react/index.md";
   slug: "accordion-in-react";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "arrays-in-javascript/index.md": {
 	id: "arrays-in-javascript/index.md";
   slug: "arrays-in-javascript";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "closure-in-javascript/index.md": {
 	id: "closure-in-javascript/index.md";
   slug: "closure-in-javascript";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "functions-in-javascript/index.md": {
 	id: "functions-in-javascript/index.md";
   slug: "functions-in-javascript";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "hoisting-in-javascript/index.md": {
 	id: "hoisting-in-javascript/index.md";
   slug: "hoisting-in-javascript";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 };
 "projects": {
-"project-1/index.md": {
-	id: "project-1/index.md";
-  slug: "project-1";
+"css-library/index.md": {
+	id: "css-library/index.md";
+  slug: "css-library";
   body: string;
   collection: "projects";
-  data: InferEntrySchema<"projects">
+  data: any
 } & { render(): Render[".md"] };
-"project-2/index.md": {
-	id: "project-2/index.md";
-  slug: "project-2";
+"ecommerce/index.md": {
+	id: "ecommerce/index.md";
+  slug: "ecommerce";
   body: string;
   collection: "projects";
-  data: InferEntrySchema<"projects">
+  data: any
+} & { render(): Render[".md"] };
+"note-app/index.md": {
+	id: "note-app/index.md";
+  slug: "note-app";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
+"social-media/index.md": {
+	id: "social-media/index.md";
+  slug: "social-media";
+  body: string;
+  collection: "projects";
+  data: any
+} & { render(): Render[".md"] };
+"video-app/index.md": {
+	id: "video-app/index.md";
+  slug: "video-app";
+  body: string;
+  collection: "projects";
+  data: any
 } & { render(): Render[".md"] };
 };
 "work": {
@@ -230,21 +251,21 @@ declare module 'astro:content' {
   slug: "equip";
   body: string;
   collection: "work";
-  data: InferEntrySchema<"work">
+  data: any
 } & { render(): Render[".md"] };
 "intangles.md": {
 	id: "intangles.md";
   slug: "intangles";
   body: string;
   collection: "work";
-  data: InferEntrySchema<"work">
+  data: any
 } & { render(): Render[".md"] };
 "tgs.md": {
 	id: "tgs.md";
   slug: "tgs";
   body: string;
   collection: "work";
-  data: InferEntrySchema<"work">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -256,5 +277,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
