@@ -1,7 +1,7 @@
 ---
 title: "Testing framework javaScript🛠️"
 description: "Build simple testing framework in javascript."
-date: "January 18 2020"
+date: "January 18 2024"
 ---
 
 ### Introduction
