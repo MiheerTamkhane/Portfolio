@@ -151,13 +151,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"04-work-collection/index.md": {
-	id: "04-work-collection/index.md";
-  slug: "04-work-collection";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
 "05-markdown-syntax/index.md": {
 	id: "05-markdown-syntax/index.md";
   slug: "05-markdown-syntax";
@@ -203,6 +196,13 @@ declare module 'astro:content' {
 "hoisting-in-javascript/index.md": {
 	id: "hoisting-in-javascript/index.md";
   slug: "hoisting-in-javascript";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"testing-framework-javascript/index.md": {
+	id: "testing-framework-javascript/index.md";
+  slug: "testing-framework-javascript";
   body: string;
   collection: "blog";
   data: any
